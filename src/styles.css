@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.bloc-haut{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bloc-bas{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 90vh;
+}
