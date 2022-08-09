@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlockComponentComponent } from './block-component/block-component.component';
 import { BlockUsersComponent } from './block-users/block-users.component';
+import {FormsModule} from "@angular/forms";
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { BlockUsersComponent } from './block-users/block-users.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

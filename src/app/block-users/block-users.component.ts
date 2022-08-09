@@ -17,6 +17,20 @@ export class BlockUsersComponent implements OnInit {
     photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
 
+  displayAge : boolean = false;
+  btnAge : string = "Show Age"
+
+  toggle() {
+    this.displayAge = !this.displayAge;
+
+      if(this.displayAge){
+        this.btnAge = "Hidden Age"
+      }else{
+        this.btnAge = "Show Age"
+      }
+
+  }
+
   ngOnInit(): void {
   }
 
