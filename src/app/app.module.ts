@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BlockComponentComponent } from './block-component/block-component.component';
 import { BlockUsersComponent } from './block-users/block-users.component';
 import {FormsModule} from "@angular/forms";
+import { MenuComponent } from './menu/menu.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 // @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
     BlockComponentComponent,
-    BlockUsersComponent
+    BlockUsersComponent,
+    MenuComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
